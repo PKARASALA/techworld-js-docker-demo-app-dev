@@ -6,6 +6,15 @@ pipeline {
 
     stages {
 
+        stage('Git checkout') {
+            steps {
+
+                script{
+                    
+                    git branch: 'master', url: 'https://github.com/PKARASALA/techworld-js-docker-demo-app-dev.git'
+            }
+        }
+
         stage('build') {
             steps {
 
