@@ -1,5 +1,3 @@
-#Declarative
-
 pipeline {
     
     agent any
@@ -39,4 +37,5 @@ pipeline {
         }
 
     }
+}
 }
